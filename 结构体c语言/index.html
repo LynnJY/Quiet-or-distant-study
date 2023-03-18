@@ -384,9 +384,82 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          c结构体
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         c结构体
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    结构体声明与定义
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    结构体变量及其内部成员变量的定义及访问
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    引用（C++）、指针和数组
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    结构体嵌套
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    结构体与函数传参
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    占用内存空间
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    变长结构体
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -412,6 +485,63 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    结构体声明与定义
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    结构体变量及其内部成员变量的定义及访问
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    引用（C++）、指针和数组
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    结构体嵌套
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    结构体与函数传参
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    占用内存空间
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    变长结构体
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -431,7 +561,8 @@
   
 
 
-<h1 id="_1"><strong>结构体声明与定义</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="_1"><strong>结构体</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2"><strong>结构体声明与定义</strong><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><strong>第一种</strong>：只有结构体定义</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">stuff</span><span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">        </span><span class="kt">char</span><span class="w"> </span><span class="n">job</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
@@ -510,7 +641,7 @@
 <p>同样的写法，再定义一个结构体成员HU2，他们的"类型"不同，因为如果类型相同，肯定会报错了，实际并没有报。</p>
 <p><img alt="" src="https://img-blog.csdnimg.cn/20190318173050769.png" /></p>
 <p>不过内存操作角度，HU2和HU应该没有任何区别，也可以用指针强行更改，前提是确认安全，比如没有不同文件不同平台对齐不兼容这种问题，所以C很万能，也很危险</p>
-<h1 id="_2"><strong>结构体变量及其内部成员变量的定义及访问</strong><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<h2 id="_3"><strong>结构体变量及其内部成员变量的定义及访问</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>就像刚才的第二种提到的，结构体变量的声明可以用：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">stuff</span><span class="w"> </span><span class="n">yourname</span><span class="p">;</span>
 </code></pre></div>
@@ -530,7 +661,7 @@
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">        </span><span class="n">Huqinwei</span><span class="p">.</span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">185</span><span class="p">;</span>
 </code></pre></div>
 <p>结构体成员变量的访问除了可以借助符号"."，还可以用"-&gt;"访问（下边会提）。</p>
-<h1 id="c"><strong>引用（C++）、指针和数组</strong><a class="headerlink" href="#c" title="Permanent link">&para;</a></h1>
+<h2 id="c"><strong>引用（C++）、指针和数组</strong><a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
 <p>首先是引用和指针：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">stuff</span><span class="p">{</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">        </span><span class="kt">char</span><span class="w"> </span><span class="n">job</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
@@ -579,7 +710,7 @@
 <a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">                                        </span><span class="p">{</span><span class="mi">44</span><span class="p">,</span><span class="mi">65</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">0</span><span class="p">},</span>
 <a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">                                        </span><span class="p">{</span><span class="mi">46</span><span class="p">,</span><span class="mi">99</span><span class="p">,</span><span class="mi">77</span><span class="p">,</span><span class="mi">0</span><span class="p">}};</span>
 </code></pre></div>
-<h1 id="_3"><strong>结构体嵌套</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
+<h2 id="_4"><strong>结构体嵌套</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>结构体嵌套其实没有太意外的东西，只要遵循一定规律即可：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">//对于&quot;一锤子买卖&quot;，只对最终的结构体变量感兴趣，其中A、B也可删，不过最好带着</span>
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">struct</span><span class="w"> </span><span class="nc">A</span><span class="p">{</span>
@@ -608,7 +739,7 @@
 <a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="n">结果无误</span><span class="err">。</span>
 </code></pre></div>
 <p>但是如果嵌套的结构体B是在A内部才声明的，并且没定义一个对应的对象实体b，这个结构体B的大小还是不算进结构体A中。</p>
-<h1 id="_4"><strong>结构体与函数传参</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
+<h2 id="_5"><strong>结构体与函数传参</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>关于传参，首先，把结构体中的int成员变量当做和普通int变量一样的东西来使用（当做函数参数），是不用脑子就想到的一种方法，如下：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
 <a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">func</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">b</span><span class="p">.</span><span class="n">c</span><span class="p">);</span>
@@ -642,7 +773,7 @@
 <a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a><span class="w">    </span><span class="n">func3</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
 <a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a><span class="p">}</span>
 </code></pre></div>
-<h1 id="_5"><strong>占用内存空间</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
+<h2 id="_6"><strong>占用内存空间</strong><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>struct结构体，在 <strong>结构体</strong>定义的时候不能申请内存空间，不过如果是 <strong>结构体变量</strong>，声明的时候就可以分配——两者关系就像C++的类与对象，对象才分配内存（不过严格讲，作为代码段，结构体定义部分".text"真的就不占空间了么？当然，这是另外一个范畴的话题）。</p>
 <p>结构体的大小通常（只是通常）是结构体所含变量大小的总和，下面打印输出上述结构体的size：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;size of struct man:%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">man</span><span class="p">));</span>
@@ -700,7 +831,7 @@
 </code></pre></div>
 <p>PS：结构体的声明也要注意位置的，作用域不一样。</p>
 <p>C++的结构体变量的声明定义和C有略微不同，说白了就是更"面向对象"风格化，要求更低。</p>
-<h1 id="_6"><strong>变长结构体</strong><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
+<h2 id="_7"><strong>变长结构体</strong><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p>变长结构体应该越来越不常见了，考虑二八法则和学习效率（和本文阐述的清晰程度），建议可以跳过，收藏，以后再研究。</p>
 <p>可以变长的数组</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="cp">#include</span>
