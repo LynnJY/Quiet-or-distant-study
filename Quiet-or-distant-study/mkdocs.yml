@@ -6,10 +6,10 @@ site_author: #作者名
 theme:
   name: material
   palette:
-    #primary: blue grey
+    #primary: deep orange
 
     - scheme: default # 日间模式
-      primary: grey # 上方的
+      primary: deep orange # 上方的
       accent: cyan # 链接等可交互元件的高亮色
       toggle:
         icon: material/weather-night # 图标
@@ -36,8 +36,8 @@ theme:
   language: zh # 一些提示性的文字会变成中文
 
 
-  icon:
-    repo: fontawesome/brands/github #右上角图标
+  icon: #
+    repo: fontawesome/brands/github右上角图标
 repo_url: https://github.com/LynnJY/mymkdocs # 右上角点击跳转的链接
 repo_name: LynnJY.github.io # 右上角的名字
 
